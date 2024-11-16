@@ -3,7 +3,7 @@
 
 <template>
     <!-- Contact Section -->
-    <section id="contact" class="contact-section py-5 bg-dark">
+    <section id="contact" class="contact-section py-5">
         <div class="container text-center">
             <h2>Contato</h2>
             <p>Entre em contato para mais informações.</p>
@@ -29,4 +29,7 @@
 
 <style scoped>
 /* Estilos para a seção de contato */
+.contact-section {
+    background-color: #121212;
+}
 </style>

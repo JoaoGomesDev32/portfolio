@@ -13,7 +13,7 @@ const projects = ref([
 
 <template>
   <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio-section py-5">
+  <section id="portfolio" class="portfolio-section py-5 bg-dark">
     <div class="container">
       <h2 class="text-center">Projetos</h2>
       <div class="row">
@@ -33,5 +33,8 @@ const projects = ref([
 
 <style scoped>
 /* Estilos específicos da seção Portfolio */
+.card {
+    margin-bottom: 20px;
+}
 </style>
 

@@ -11,7 +11,7 @@ const skills = ref([
 </script>
 
 <template>
-  <section id="skills" class="skills-section py-5 bg-dark">
+  <section id="skills" class="skills-section py-5">
     <div class="container">
       <h2 class="text-center">Habilidades</h2>
       <div class="row">
@@ -31,3 +31,19 @@ const skills = ref([
     </div>
   </section>
 </template>
+
+<style scoped>
+/* Add any specific styles for the skills section here */
+.skills-section {
+  background-color: #121212;
+}
+.skills-section .progress {
+    height: 20px;
+    margin-bottom: 15px;
+    color: #159e5c;
+}
+
+.progress-bar {
+    background-color: #159e5c;
+}
+</style>

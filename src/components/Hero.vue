@@ -34,9 +34,8 @@ const particlesOptions = ref({
 </script>
 
 <template>
-  <ParticlesContainer />
   <header class="hero-section text-center text-white d-flex align-items-center justify-content-center">
-    <div id="particles-js" class="w-100 h-100 position-absolute"></div>
+    <div id="tsparticles"></div> <!-- Div para o fundo das partículas -->
     <div class="container position-relative">
       <h1>Olá, Eu Sou João Gomes</h1>
       <p>Desenvolvedor Web</p>
@@ -51,6 +50,13 @@ const particlesOptions = ref({
   position: relative;
   overflow: hidden;
   background-color: #121212;
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Fica atrás do conteúdo */
 }
 
 .container {

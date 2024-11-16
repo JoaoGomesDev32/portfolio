@@ -51,25 +51,26 @@ onUnmounted(() => {
 
 
 <style>
+/* Estilo para o botão de voltar ao topo */
 #scrollTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #18d26e;
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  font-size: 18px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s;
-  height: 50px;
-  width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #18d26e; /* Cor de fundo do botão */
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Oculto por padrão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    height: 50px;
+    width: 50px;
 }
 
 #scrollTopBtn:hover {
-  background-color: #159e5c;
+    background-color: #159e5c; /* Cor de fundo ao passar o mouse */
 }
 </style>

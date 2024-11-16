@@ -1,0 +1,35 @@
+/* Reset CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #1c1e21;
+    color: #ffffff;
+}
+
+.navbar, .footer {
+    background-color: #222529;
+}
+
+.navbar .nav-link:hover {
+    border-bottom: 4px solid #18d26e;
+}
+
+.btn-primary {
+    background-color: #18d26e;
+    border-color: #18d26e;
+}
+
+.btn-primary:hover {
+    background-color: #159e5c;
+    border-color: #159e5c;
+}
+
+  /* Cores para títulos */
+h1, h2, h3, h4, h5 {
+    color: #18d26e;
+}

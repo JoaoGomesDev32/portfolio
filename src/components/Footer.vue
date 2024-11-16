@@ -6,7 +6,7 @@ function scrollToTop() {
 </script>
 
 <template>
-  <footer class="footer text-center py-3">
+  <footer class="footer text-center py-3 bg-dark">
     <div class="container">
       <p>Feito com 💻 e ☕ por João Gomes. &copy; 2024</p>
     </div>
