@@ -6,51 +6,15 @@
   box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+  
 body {
     background-color: #1c1e21;
     color: #ffffff;
 }
 
-.navbar, .footer {
-    background-color: #222529;
-}
-
-.navbar .nav-link:hover {
-    border-bottom: 4px solid #18d26e;
-}
-
-.btn-primary {
-    background-color: #28a745;
-    border: none;
-    cursor: pointer;
-    margin-top: 15px; /* Espaço do botão para o item acima */
-    color: white; /* Garante contraste com o fundo */
-  }
-  
-  .btn-primary:hover {
-    background-color: #218838;
-  }
-  
-  /* Remove a cor azul no estado de :focus e :active */
-  .btn-primary:focus,
-  .btn-primary:active {
-    background-color: #1e7e34; /* Um tom mais escuro de verde para indicar o clique */
-    outline: none; /* Remove a borda azul padrão */
-    box-shadow: none; /* Remove o efeito de sombra azul no estado de foco */
-  }
-  
-
-/* .btn-primary {
-    background-color: #18d26e;
-    border-color: #18d26e;
-}
-
-.btn-primary:hover {
-    background-color: #159e5c;
-    border-color: #159e5c;
-}
-
-  /* Cores para títulos */
-/* h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
     color: #18d26e;
-} */
+}

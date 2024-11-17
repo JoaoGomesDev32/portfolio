@@ -5,7 +5,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <router-link class="navbar-brand" to="#home">JG Developer</router-link>
+        <router-link class="navbar-brand" to="/">JS Developer</router-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -20,16 +20,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <router-link class="nav-link" to="#about">Sobre</router-link>
+              <a class="nav-link" href="#about">Sobre</a>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="#skills">Habilidades</router-link>
+              <a class="nav-link" href="#skills">Habilidades</a>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="#portfolio">Portfólio</router-link>
+              <a class="nav-link" href="#portfolio">Portfólio</a>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="#contact">Contato</router-link>
+              <a class="nav-link" href="#contact">Contato</a>
             </li>
           </ul>
         </div>
@@ -39,5 +39,25 @@
   
   <style scoped>
   /* Estilos específicos do Navbar */
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  border-bottom: 4px solid #18d26e;
+  transition: width .3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
   </style>
   

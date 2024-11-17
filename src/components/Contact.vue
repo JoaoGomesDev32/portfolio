@@ -32,4 +32,5 @@
 .contact-section {
     background-color: #121212;
 }
+
 </style>
