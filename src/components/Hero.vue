@@ -53,6 +53,21 @@ export default defineComponent({
       <h1>Bem-vindo, Eu sou João Silva</h1>
       <h2 ref="subtitle" class="hero-subtitle"></h2>
       <a href="#portfolio" class="btn btn-primary">Veja Meus Projetos</a>
+      <!-- Adicionando os ícones de mídia social -->
+      <div class="social-icons">
+        <a href="https://github.com/seuusuario" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://wa.me/seunumerodetelefone" target="_blank" class="social-icon">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/seuusuario" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/seuusuario" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
     </div>
   </section>
 </template>
@@ -83,28 +98,46 @@ export default defineComponent({
   color: white;
 }
 
-a.btn-primary {
-  all: unset; /* Remove todos os estilos padrão do navegador */
+.btn-primary {
   background-color: #28a745;
+  border: none;
   cursor: pointer;
-  text-decoration: none;
-  display: inline-block; /* Garantir comportamento como botão */
+  margin-top: 15px;
   color: white;
-  padding: 0.5em 1em;
-  text-align: center;
   transition: background-color 0.3s ease;
 }
 
-a.btn-primary:hover {
+.btn-primary:hover {
   background-color: #218838;
 }
 
-a.btn-primary:focus,
-a.btn-primary:active,
-a.btn-primary:focus-visible {
+/* Remove a cor azul no estado de :focus e :active */
+.btn-primary:focus,
+.btn-primary:active {
   background-color: #1e7e34;
   outline: none;
   box-shadow: none;
+}
+
+/* Estilos para os ícones de mídia social */
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icon {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 10px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #28a745; /* Verde como o botão */
+}
+
+.social-icon i {
+  pointer-events: none;
 }
 
 </style>

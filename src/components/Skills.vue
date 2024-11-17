@@ -3,10 +3,18 @@
 import { ref } from 'vue';
 
 const skills = ref([
-  { name: 'HTML', level: 90 },
-  { name: 'CSS', level: 80 },
-  { name: 'JavaScript', level: 75 },
-  // Add more skills here
+  { name: 'HTML', level: 90, icon: 'fab fa-html5' },
+  { name: 'CSS', level: 80, icon: 'fab fa-css3-alt' },
+  { name: 'JavaScript', level: 75, icon: 'fab fa-js-square' },
+  { name: 'React', level: 70, icon: 'fab fa-react' },
+  { name: 'Vue', level: 80, icon: 'fab fa-vuejs' },
+  { name: 'TypeScript', level: 60, icon: 'fab fa-typo3' },
+  { name: 'Bootstrap', level: 80, icon: 'fab fa-bootstrap' },
+  { name: 'MySQL', level: 70, icon: 'fas fa-database' },
+  { name: 'GitHub', level: 90, icon: 'fab fa-github' },
+  { name: 'Git', level: 85, icon: 'fab fa-git-alt' },
+  { name: 'Node.js', level: 75, icon: 'fab fa-node-js' },
+  { name: 'Python', level: 65, icon: 'fab fa-python' },
 ]);
 </script>
 
@@ -16,6 +24,7 @@ const skills = ref([
       <h2 class="text-center">Habilidades</h2>
       <div class="row">
         <div class="col-md-4" v-for="(skill, index) in skills" :key="index">
+          <i :class="skill.icon" style="font-size: 4rem;"></i>
           <h4>{{ skill.name }}</h4>
           <div class="progress">
             <div
@@ -46,4 +55,24 @@ const skills = ref([
 .progress-bar {
     background-color: #159e5c;
 }
+
+.skills-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-section .col-md-4 {
+    margin-bottom: 30px;
+}
+
+.skills-section i {
+    font-size: 1.8rem;
+}
+
+.skills-section h4 {
+    font-size: 1.2rem;
+    color: #ddd;
+}
 </style>
+

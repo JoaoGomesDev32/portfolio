@@ -7,6 +7,16 @@ const projects = ref([
     title: 'Projeto 1',
     description: 'Descrição do projeto.'
   },
+  {
+    image: 'img/projeto2.jpg',
+    title: 'Projeto 2',
+    description: 'Descrição do projeto.'
+  },
+  {
+    image: 'img/projeto3.jpg',
+    title: 'Projeto 3',
+    description: 'Descrição do projeto.'
+  },
   // Adicione outros projetos aqui
 ]);
 </script>
@@ -24,6 +34,13 @@ const projects = ref([
               <h5 class="card-title">{{ project.title }}</h5>
               <p class="card-text">{{ project.description }}</p>
             </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <a href="#" class="btn btn-primary">Ver mais</a>
+              <div class="project-links">
+                <a href="#" class="project-link">Github</a>
+                <a href="#" class="project-link">Demo</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -34,7 +51,31 @@ const projects = ref([
 <style scoped>
 /* Estilos específicos da seção Portfolio */
 .card {
-    margin-bottom: 20px;
+    flex: 1 1 30%;
+    margin: 10px;
+    background-color: #121212;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.project-links a {
+    color: #159e5c;
+}
+
+.project-links a:hover {
+    color: #28a745;
+}
+
+.btn-primary {
+    background-color: #159e5c;
+    border-color: #159e5c;
+}
+
+.btn-primary:hover {
+    background-color: #28a745;
+    border-color: #28a745;
 }
 </style>
 
