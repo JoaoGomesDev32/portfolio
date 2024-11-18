@@ -55,7 +55,7 @@ export default defineComponent({
       <a href="#portfolio" class="btn btn-primary">Veja Meus Projetos</a>
       <!-- Adicionando os ícones de mídia social -->
       <div class="social-icons">
-        <a href="https://github.com/seuusuario" target="_blank" class="social-icon">
+        <a href="https://github.com/JoaoGomesDev32" target="_blank" class="social-icon">
           <i class="fab fa-github"></i>
         </a>
         <a href="https://wa.me/seunumerodetelefone" target="_blank" class="social-icon">
@@ -64,7 +64,7 @@ export default defineComponent({
         <a href="https://www.instagram.com/seuusuario" target="_blank" class="social-icon">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.linkedin.com/in/seuusuario" target="_blank" class="social-icon">
+        <a href="https://www.linkedin.com/in/joaofelipedev32/" target="_blank" class="social-icon">
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
@@ -89,7 +89,7 @@ export default defineComponent({
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #28a745; /* Verde como destaque */
+  color: #18d26e; /* Verde como destaque */
 }
 
 .hero-content h2 {
@@ -99,7 +99,7 @@ export default defineComponent({
 }
 
 .btn-primary {
-  background-color: #28a745;
+  background-color: #18d26e;
   border: none;
   cursor: pointer;
   margin-top: 15px;

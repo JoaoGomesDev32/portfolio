@@ -43,6 +43,9 @@
 
 <style scoped>
 /* Estilos específicos da seção About */
+.about h2{
+  color: #159e5c;
+}
 .about-section img {
   width: 350px;
   height: 350px;

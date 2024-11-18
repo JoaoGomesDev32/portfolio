@@ -32,7 +32,7 @@
           <!-- Ícones de Redes Sociais -->
           <div class="col-lg-6">
             <div class="social-icons">
-              <a href="https://github.com/seuusuario" target="_blank" class="social-icon">
+              <a href="https://github.com/JoaoGomesDev32" target="_blank" class="social-icon">
                 <i class="fab fa-github"></i>
               </a>
               <a href="https://wa.me/seunumerodetelefone" target="_blank" class="social-icon">
@@ -41,7 +41,7 @@
               <a href="https://www.instagram.com/seuusuario" target="_blank" class="social-icon">
                 <i class="fab fa-instagram"></i>
               </a>
-              <a href="https://www.linkedin.com/in/seuusuario" target="_blank" class="social-icon">
+              <a href="https://www.linkedin.com/in/joaofelipedev32/" target="_blank" class="social-icon">
                 <i class="fab fa-linkedin"></i>
               </a>
             </div>
@@ -87,7 +87,7 @@
 .contact .section-title h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #28a745; /* Cor verde */
+  color: #18d26e; /* Cor verde */
 }
 
 .contact .section-title p {
@@ -122,7 +122,7 @@
 }
 
 .contact form button {
-  background-color: #28a745;
+  background-color: #18d26e;
   color: white;
   border: none;
   padding: 12px 30px;
