@@ -3,7 +3,7 @@ import { ref } from 'vue';
 
 const projects = ref([
   {
-    image: 'img/projeto1.jpg',
+    image: 'messages-generator.png',
     title: 'Projeto 1',
     description: 'Descrição do projeto.'
   },
@@ -29,7 +29,7 @@ const projects = ref([
       <div class="row">
         <div class="col-md-4" v-for="(project, index) in projects" :key="index">
           <div class="card">
-            <img :src="project.image" class="card-img-top" :alt="project.title">
+            <img :src="`src/assets/img/${project.image}`" class="card-img-top img-fluid" :alt="project.title">
             <div class="card-body">
               <h5 class="card-title">{{ project.title }}</h5>
               <p class="card-text">{{ project.description }}</p>
@@ -37,7 +37,7 @@ const projects = ref([
             <div class="card-footer d-flex justify-content-between align-items-center">
               <a href="#" class="btn btn-primary">Ver mais</a>
               <div class="project-links">
-                <a href="#" class="project-link">Github</a>
+                <a href="https://github.com/JoaoGomesDev32/gerador-mensagens/tree/main" target="blank" class="project-link">Github</a>
                 <a href="#" class="project-link">Demo</a>
               </div>
             </div>
