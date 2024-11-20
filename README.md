@@ -35,6 +35,7 @@ Este portfólio foi desenvolvido utilizando as seguintes tecnologias e ferrament
 
 Você pode acessar meu portfólio ao vivo clicando no link abaixo:  
 [🔗 Meu Portfólio](https://github.com/JoaoGomesDev32/portfolio)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/451212a9-9238-4528-ab97-59cdbe2975cc/deploy-status)](https://app.netlify.com/sites/jsxdeveloper/deploys)
 
 ## 🚀 Executando Localmente
 
