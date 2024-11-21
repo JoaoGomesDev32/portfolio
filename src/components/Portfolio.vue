@@ -4,17 +4,17 @@ import { ref } from 'vue';
 const projects = ref([
   {
     image: 'messages-generator.png',
-    title: 'Projeto 1',
-    description: 'Descrição do projeto.',
+    title: 'Gerador de Mensagens',
+    description: 'Um aplicativo simples e elegante para gerar mensagens motivacionais, dicas inspiradoras e complementos encorajadores. Desenvolvido com Vue 3 e Vuetify, este projeto é otimizado para dispositivos móveis e permite até mesmo o compartilhamento direto das mensagens geradas.',
     github: 'https://github.com/JoaoGomesDev32/gerador-mensagens/tree/main',
     demo: '#'
   },
   {
-    image: 'projeto2.jpg',
-    title: 'Projeto 2',
-    description: 'Descrição do projeto.',
-    github: '#',
-    demo: '#'
+    image: 'screen-game.png',
+    title: 'Flappy Bird',
+    description: 'Um jogo simples e divertido inspirado no famoso Flappy Bird, desenvolvido com JavaScript, HTML5 e CSS3.',
+    github: 'https://github.com/JoaoGomesDev32/flappyBird',
+    demo: 'https://voapassarinhovoa.netlify.app/'
   },
   {
     image: 'projeto3.jpg',
@@ -36,7 +36,7 @@ const projects = ref([
       <div class="row g-4">
         <div class="col-lg-4 col-md-6" v-for="(project, index) in projects" :key="index">
           <div class="portfolio-item position-relative overflow-hidden">
-            <img :src="`src/assets/img/${project.image}`" class="img-fluid w-100" :alt="project.title">
+            <img :src="`src/assets/img/${project.image}`" class="img-fluid w-100 h-100" :alt="project.title" style="object-fit: cover;">
             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
               <div class="text-center">
                 <h5 class="text-white">{{ project.title }}</h5>
@@ -71,9 +71,11 @@ const projects = ref([
 }
 
 .portfolio-item img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
-
 .portfolio-item:hover img {
   transform: scale(1.1);
 }
@@ -112,3 +114,4 @@ const projects = ref([
   border-color: #28a745;
 }
 </style>
+
