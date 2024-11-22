@@ -16,7 +16,7 @@ export default defineComponent({
       });
 
       // Efeito de digitação no subtítulo
-      const messages = ["Desenvolvedor Web", "Apaixonado por Tecnologia", "Pronto para Inovar"];
+      const messages = ["Desenvolvedor Web", "FullStack", "Apaixonado por Tecnologia", "Pronto para Inovar"];
       let i = 0;
 
       const typeEffect = () => {
@@ -96,6 +96,7 @@ export default defineComponent({
   font-size: 1.5rem;
   font-weight: 400;
   color: white;
+  height: 40px;
 }
 
 .btn-primary {
