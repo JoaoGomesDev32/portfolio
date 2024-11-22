@@ -37,7 +37,6 @@ const projects = ref([
         <div class="col-lg-4 col-md-6" v-for="(project, index) in projects" :key="index">
           <div class="portfolio-item position-relative overflow-hidden">
             <img :src="`src/assets/img/${project.image}`" class="img-fluid w-100 h-100" :alt="project.title" style="object-fit: cover">
-            <img :src="`src/assets/img/${project.image}`" class="img-fluid w-100 h-100" :alt="project.title" style="object-fit: cover;">
             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
               <div class="text-center">
                 <h5 class="text-white">{{ project.title }}</h5>
@@ -65,22 +64,20 @@ const projects = ref([
   color: #28a745;
 }
 
-
-
 .portfolio-item {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  max-height: 300px; /* Altura mínima */
-  background: #212529; /* Cor de fundo para evitar problemas com imagens */
+  height: 300px; /* Altura fixa */
+  background: #212529; /* Cor de fundo */
 }
 
 .portfolio-item img {
   transition: transform 0.5s ease;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  object-fit: cover; /* Cobre todo o espaço do card */
+  object-position: center;
 }
 
 .portfolio-item:hover img {
