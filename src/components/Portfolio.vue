@@ -36,7 +36,7 @@ const projects = ref([
       <div class="row g-4">
         <div class="col-lg-4 col-md-6" v-for="(project, index) in projects" :key="index">
           <div class="portfolio-item position-relative overflow-hidden">
-            <img :src="`src/assets/img/${project.image}`" class="img-fluid w-100 h-100" :alt="project.title" style="object-fit: cover">
+            <img :src="`src/assets/img/${project.image}`" class="img-fluid w-100 h-100" :alt="project.title" />
             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
               <div class="text-center">
                 <h5 class="text-white">{{ project.title }}</h5>
@@ -118,5 +118,6 @@ const projects = ref([
   border-color: #28a745;
 }
 </style>
+
 
 

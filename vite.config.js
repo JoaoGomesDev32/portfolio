@@ -9,9 +9,13 @@ export default defineConfig({
   optimizeDeps: {
     include: ["tsparticles"], // Adicione a dependência que está falhando
   },
-  base: '/nome-do-repositorio/', // Ajuste conforme o repositório
+  base: './', // Garante que os recursos estáticos sejam acessados corretamente
   build: {
-    assetsDir: 'assets'
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name].[ext]', // Configura os arquivos estáticos
+      },
+    },
   },
   plugins: [
     vue(),
