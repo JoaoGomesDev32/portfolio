@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 
 const projects = ref([
   {
@@ -24,6 +24,13 @@ const projects = ref([
     demo: '#'
   },
 ]);
+
+onMounted(() => {
+  projects.value.forEach(project => {
+    const img = new Image();
+    img.src = project.image;
+  });
+});
 </script>
 
 <template>
