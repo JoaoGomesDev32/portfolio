@@ -9,6 +9,10 @@ export default defineConfig({
   optimizeDeps: {
     include: ["tsparticles"], // Adicione a dependência que está falhando
   },
+  base: '/nome-do-repositorio/', // Ajuste conforme o repositório
+  build: {
+    assetsDir: 'assets'
+  },
   plugins: [
     vue(),
     vueDevTools(),
