@@ -1,16 +1,18 @@
 <script setup>
 import { ref, onMounted } from 'vue';
+import messagesGeneratorImg from '@/assets/img/messages-generator.jpeg';
+import screenGameImg from '@/assets/img/screen-game.jpeg';
 
 const projects = ref([
   {
-    image: 'messages-generator.png',
+    image: messagesGeneratorImg,
     title: 'Gerador de Mensagens',
     description: 'Um aplicativo simples e elegante para gerar mensagens motivacionais, dicas inspiradoras e complementos encorajadores. Desenvolvido com Vue 3 e Vuetify, este projeto é otimizado para dispositivos móveis e permite até mesmo o compartilhamento direto das mensagens geradas.',
     github: 'https://github.com/JoaoGomesDev32/gerador-mensagens/tree/main',
     demo: '#'
   },
   {
-    image: 'screen-game.png',
+    image: screenGameImg,
     title: 'Flappy Bird',
     description: 'Um jogo simples e divertido inspirado no famoso Flappy Bird, desenvolvido com JavaScript, HTML5 e CSS3.',
     github: 'https://github.com/JoaoGomesDev32/flappyBird',
@@ -43,7 +45,7 @@ onMounted(() => {
       <div class="row g-4">
         <div class="col-lg-4 col-md-6" v-for="(project, index) in projects" :key="index">
           <div class="portfolio-item position-relative overflow-hidden">
-            <img :src="`src/assets/img/${project.image}`" class="img-fluid w-100 h-100" :alt="project.title" />
+            <img :src="project.image" :alt="project.title" class="img-fluid w-100 h-100" />
             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
               <div class="text-center">
                 <h5 class="text-white">{{ project.title }}</h5>
