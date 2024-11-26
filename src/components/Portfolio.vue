@@ -2,6 +2,7 @@
 import { ref, onMounted } from 'vue';
 import messagesGeneratorImg from '@/assets/img/messages-generator.jpeg';
 import screenGameImg from '@/assets/img/screen-game.jpeg';
+import xtrememovieImg from '@/assets/img/xtrememovie.jpeg';
 
 const projects = ref([
   {
@@ -19,11 +20,11 @@ const projects = ref([
     demo: 'https://voapassarinhovoa.netlify.app/'
   },
   {
-    image: 'projeto3.jpg',
-    title: 'Projeto 3',
-    description: 'Descrição do projeto.',
-    github: '#',
-    demo: '#'
+    image: xtrememovieImg,
+    title: 'Xtreme Filmes',
+    description: 'Xtreme Filmes é um site responsivo que oferece uma vasta coleção de filmes e séries online gratuitos.',
+    github: 'https://github.com/JoaoGomesDev32/xtreme-filmes',
+    demo: 'https://xtremefilmes.netlify.app/'
   },
 ]);
 
