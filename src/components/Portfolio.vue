@@ -3,13 +3,14 @@ import { ref, onMounted } from 'vue';
 import messagesGeneratorImg from '@/assets/img/messages-generator.jpeg';
 import screenGameImg from '@/assets/img/screen-game.jpeg';
 import xtrememoviesImg from '@/assets/img/xtrememovies.jpeg';
+import todolistImg from '@/assets/img/todolist.jpeg';
 
 const projects = ref([
   {
-    image: messagesGeneratorImg,
-    title: 'Gerador de Mensagens',
-    description: 'Um aplicativo simples e elegante para gerar mensagens motivacionais, dicas inspiradoras e complementos encorajadores. Desenvolvido com Vue 3 e Vuetify, este projeto é otimizado para dispositivos móveis e permite até mesmo o compartilhamento direto das mensagens geradas.',
-    github: 'https://github.com/JoaoGomesDev32/gerador-mensagens/tree/main',
+    image: todolistImg,
+    title: 'ToDo List',
+    description: 'Uma aplicação de lista de tarefas simples e intuitiva, desenvolvida com Vue.js. Permite adicionar, editar e remover tarefas, além de marcar como concluídas. Ideal para organizar suas atividades diárias.',
+    github: 'https://github.com/JoaoGomesDev32/todo-list',
     demo: '#'
   },
   {
@@ -26,6 +27,13 @@ const projects = ref([
     github: 'https://github.com/JoaoGomesDev32/xtreme-filmes',
     demo: 'https://xtremefilmes.netlify.app/'
   },
+  {
+    image: messagesGeneratorImg,
+    title: 'Gerador de Mensagens',
+    description: 'Um aplicativo simples e elegante para gerar mensagens motivacionais, dicas inspiradoras e complementos encorajadores. Desenvolvido com Vue 3 e Vuetify, este projeto é otimizado para dispositivos móveis e permite até mesmo o compartilhamento direto das mensagens geradas.',
+    github: 'https://github.com/JoaoGomesDev32/gerador-mensagens/tree/main',
+    demo: '#'
+  }
 ]);
 
 onMounted(() => {
