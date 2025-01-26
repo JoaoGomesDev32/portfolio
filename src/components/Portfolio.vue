@@ -3,9 +3,24 @@ import { ref, onMounted } from 'vue';
 import messagesGeneratorImg from '@/assets/img/messages-generator.jpeg';
 import screenGameImg from '@/assets/img/screen-game.jpeg';
 import xtrememoviesImg from '@/assets/img/xtrememovies.jpeg';
-import todolistImg from '@/assets/img/todolist.jpeg';
+import todolistImg from '@/assets/img/todolist.png';
+import jsmusicImg from '@/assets/img/jsmusic.png';
 
 const projects = ref([
+  {
+    image: xtrememoviesImg,
+    title: 'Xtreme Filmes',
+    description: 'Xtreme Filmes é um site responsivo que oferece uma vasta coleção de filmes e séries online gratuitos.',
+    github: 'https://github.com/JoaoGomesDev32/xtreme-filmes',
+    demo: 'https://xtremefilmes.netlify.app/'
+  },
+  {
+    image: jsmusicImg,
+    title: 'JS Music',
+    description: 'Uma aplicação web para pesquisar músicas no Deezer, criar playlists personalizadas e salvá-las localmente. Desenvolvido com React, TypeScript, Node.js e Deezer API, com foco em design responsivo e experiência de usuário fluida.',
+    github: 'https://github.com/JoaoGomesDev32/js-music',
+    demo: 'https://jsxmusic.netlify.app/'
+  },
   {
     image: todolistImg,
     title: 'ToDo List',
@@ -19,13 +34,6 @@ const projects = ref([
     description: 'Um jogo simples e divertido inspirado no famoso Flappy Bird, desenvolvido com JavaScript, HTML5 e CSS3.',
     github: 'https://github.com/JoaoGomesDev32/flappyBird',
     demo: 'https://voapassarinhovoa.netlify.app/'
-  },
-  {
-    image: xtrememoviesImg,
-    title: 'Xtreme Filmes',
-    description: 'Xtreme Filmes é um site responsivo que oferece uma vasta coleção de filmes e séries online gratuitos.',
-    github: 'https://github.com/JoaoGomesDev32/xtreme-filmes',
-    demo: 'https://xtremefilmes.netlify.app/'
   },
   {
     image: messagesGeneratorImg,
