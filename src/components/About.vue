@@ -9,24 +9,26 @@
         <div class="col-md-6">
           <h2>Sobre Mim</h2>
           <p>
-            Olá! Meu nome é João Gomes, tenho 34 anos e sou brasileiro,
-            atualmente morando em Lisboa, Portugal. Sou estudante de Análise e
-            Desenvolvimento de Sistemas na faculdade Estácio, onde estou
-            cursando o último período através do EAD. Além disso, estou
-            investindo na minha formação profissional com o curso de Engenheiro
-            Fullstack na Codecademy.
+            Olá! Meu nome é João Gomes, tenho 35 anos, sou brasileiro,
+            atualmente morando em Lisboa, Portugal. Sou graduado em Análise e
+            Desenvolvimento de Sistemas pela faculdade Estácio, e também conclui
+            o curso de formação profissional de Engenheiro Fullstack da
+            Codecademy recentemente.
           </p>
           <p>
-            Em outubro de 2024, tive a alegria de conseguir minha primeira
-            oportunidade de emprego na área de tecnologia como programador de
-            software web frontend. Nesse cargo, estou ganhando uma experiência
-            valiosa e aplicando meu conhecimento no desenvolvimento de um
-            aplicativo de faturação web utilizando Vue e TypeScript.
+            Entre outubro de 2024 e setembro de 2025, tive minha primeira
+            experiência profissional na área de tecnologia como desenvolvedor
+            frontend na Magnisoft. Durante esse período, contribuí no
+            desenvolvimento de um software de faturação web utilizando Vue.js e
+            TypeScript, onde pude aplicar e expandir meus conhecimentos em
+            desenvolvimento web moderno.
           </p>
           <p>
-            Minha jornada tem sido uma mistura de aprendizado constante e novas
-            descobertas. Cada dia é uma chance de crescer e aprimorar minhas
-            habilidades para oferecer soluções eficazes e de qualidade.
+            Essa experiência me proporcionou um crescimento significativo,
+            permitindo-me trabalhar com tecnologias atuais e boas práticas de
+            desenvolvimento em um ambiente profissional. Agora, busco novos
+            desafios onde possa continuar aplicando e expandindo minhas
+            habilidades técnicas.
           </p>
         </div>
         <div class="col-md-6 text-center">
@@ -43,7 +45,7 @@
 
 <style scoped>
 /* Estilos específicos da seção About */
-.about h2{
+.about h2 {
   color: #159e5c;
 }
 .about-section img {
@@ -55,4 +57,3 @@
   object-position: center top;
 }
 </style>
-  
