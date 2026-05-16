@@ -94,4 +94,4 @@ Sinta-se à vontade para abrir issues ou enviar pull requests com sugestões e m
 
 Este projeto está sob a licença [MIT](LICENSE).
 
- 
+ https://v0.app/chat/portfolio-update-jCBw9rWEmce?ref=DCK7AZ
