@@ -1,97 +1,85 @@
-# 🌐 Meu Portfólio de Desenvolvedor Web
+# João Gomes — Web Developer Portfolio
 
-Bem-vindo ao repositório do meu portfólio! 🚀 Este projeto foi criado para apresentar minhas habilidades, projetos e experiência como desenvolvedor web. É um espaço onde você pode me conhecer melhor e explorar meu trabalho.
+Professional portfolio showcasing full-stack web projects, technical skills, and contact information for João Gomes.
 
-![Preview do Portfólio](link-para-screenshot-ou-gif-preview-do-seu-site)
+This repository contains a modern, responsive Next.js + TypeScript portfolio that bundles projects, experience, and contact details in a clean, accessible layout.
 
-## 🛠️ Tecnologias Utilizadas
+## Features
 
-Este portfólio foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
+- Clean, responsive UI built with Next.js and Tailwind CSS
+- Accessible components and dark/light theme support
+- Project gallery with screenshots, descriptions and links
+- Contact form and social links
+- Fully typed with TypeScript
 
-- **Frontend**: [Vue.js](https://vuejs.org/) (Vue 3 + Composition API)
-- **Estilo**: [Bootstrap](https://getbootstrap.com/), CSS Customizado
-- **Bibliotecas**:
-  - [GSAP](https://greensock.com/gsap) (Animações)
-- **Gerenciamento de Pacotes**: [npm](https://www.npmjs.com/)
-- **Ambiente de Desenvolvimento**: [Vite](https://vitejs.dev/)
+## Tech Stack
 
-## 📸 Funcionalidades Principais
+- Next.js 16 (App Router)
+- React 19 + TypeScript
+- Tailwind CSS
+- Framer Motion, Radix UI primitives
+- Node.js, npm
 
-- **Sessão Hero**:
-  - Apresentação dinâmica com animações no texto.
-  - Botões estilizados com redirecionamento suave.
+## Quick Start (development)
 
-- **Habilidades**:
-  - Exibição visual das habilidades com ícones e barras de progresso.
-  - Design responsivo para diferentes dispositivos.
+Clone the repository and run the development server from the project root:
 
-- **Portfólio**:
-  - Projetos destacados com links para repositórios e demos.
+```bash
+git clone https://github.com/JoaoGomesDev32/portfolio.git
+cd portfolio
+npm install
+npm run dev
+# open http://localhost:3000
+```
 
-- **Contato**:
-  - Ícones para redes sociais e formulário funcional.
+## Build (production)
 
-## 🌈 Demonstração
+```bash
+cd portfolio
+npm run build
+npm run start
+```
 
-Você pode acessar meu portfólio ao vivo clicando no link abaixo:  
-[🔗 Meu Portfólio](https://github.com/JoaoGomesDev32/portfolio)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/451212a9-9238-4528-ab97-59cdbe2975cc/deploy-status)](https://app.netlify.com/sites/jsxdeveloper/deploys)
+## Deploying to Netlify
 
-## 🚀 Executando Localmente
+This project is configured to deploy from the repository root using the official Netlify Next.js plugin.
 
-Para executar este projeto localmente, siga os passos abaixo:
+1) In the Netlify site settings, set:
+   - **Build command**: `npm run build`
+   - **Publish directory**: `.next`
+   - **Base directory**: leave empty or `/`
 
-### Pré-requisitos
-- Node.js >= 16.x
-- npm ou yarn
+2) The repository contains `netlify.toml` with the following configuration:
 
-### Passos
+```toml
+[build]
+  publish = ".next"
+  command = "npm run build"
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/JoaoGomesDev32/portfolio.git
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+```
 
-2. Navegue até o diretório do projeto:
-   ```bash
-   cd portfolio
+3) Ensure the install command is `npm install`.
 
-3. Instale as dependências:
-   ```bash
-   npm install
+Notes:
+- Netlify will build the app from the root of the repo.
+- If you prefer Vercel, the project also works well there.
 
-4. Inicie o servidor de desenvolvimento:
-   ```bash
-   npm run dev
+## Favicon / Brand Icon
 
- 5. Acesse no navegador:
-   ```bash
-   http://localhost:3000
+The project now includes a custom icon with the initials `JG` in `public/icon.svg`, and the app metadata references the same icon.
 
+## Contributing
 
-## 🖼️ Screenshots
+If you'd like improvements, open an issue or submit a pull request. For major changes, create a feature branch and describe the intent in the PR body.
 
-### 🌟 Página Inicial
-Adicione uma captura de tela da sua página inicial aqui.
+## License
 
-### 🎨 Habilidades
-Adicione uma captura de tela da seção de habilidades aqui.
+This project is released under the MIT License.
 
-### 💼 Portfólio
-Adicione uma captura de tela da seção de portfólio aqui.
+## Contact
 
-### 📬 Contato
-Adicione uma captura de tela da seção de contato aqui.
+- João Gomes — joaogomes@example.com
+- GitHub: https://github.com/JoaoGomesDev32
 
----
-
-## 🤝 Contribuição
-
-Sinta-se à vontade para abrir issues ou enviar pull requests com sugestões e melhorias.
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença [MIT](LICENSE).
-
- https://v0.app/chat/portfolio-update-jCBw9rWEmce?ref=DCK7AZ
