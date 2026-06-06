@@ -7,6 +7,15 @@ import { Github, ExternalLink, Folder } from "lucide-react"
 
 const projects = [
   {
+    title: "System Monitor Dashboard",
+    description: "Real-time system monitoring dashboard with WebSocket updates, CPU, memory, disk, network and process insights.",
+    image: "/projects/system-monitor.png",
+    technologies: ["Next.js", "TypeScript", "FastAPI", "WebSockets", "Docker"],
+    github: "https://github.com/JoaoGomesDev32/system-monitor",
+    demo: "https://system-monitor-ochre.vercel.app/",
+    featured: true
+  },
+  {
     title: "Xtreme Filmes",
     description: "Xtreme Filmes is a responsive website that offers a large collection of movies and series for online viewing.",
     image: "/projects/xtreme.jpg",
